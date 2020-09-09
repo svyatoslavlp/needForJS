@@ -1,1 +1,1 @@
-.hide{display:none}.car{width:50px;height:100px;background:transparent url(../img/player.png) center/cover no-repeat}.webp .car{background:transparent url(../img/player.webp) center/cover no-repeat}
+body{margin:0}.hide{display:none}.car{width:50px;height:100px;background:transparent url(../img/player.png) center/cover no-repeat;position:absolute;left:125px;bottom:10px}.gameArea{width:300px;height:100vh;position:relative;margin:auto;background:#222}.webp .car{background:transparent url(../img/player.webp) center/cover no-repeat}
