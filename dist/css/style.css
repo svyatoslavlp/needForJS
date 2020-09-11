@@ -143,7 +143,8 @@ body {
   display: none;
 }
 
-.car {
+.car,
+.enemy {
   width: 50px;
   height: 100px;
   background: transparent url(../img/player.png) center/cover no-repeat;
@@ -169,4 +170,4 @@ body {
   left: 145px;
 }
 
-.webp .car { background: transparent url(../img/player.webp) center/cover no-repeat; }
+.webp .car, .webp .enemy { background: transparent url(../img/player.webp) center/cover no-repeat; }
