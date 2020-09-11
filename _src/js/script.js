@@ -23,6 +23,12 @@ const setting = {
 
 function startGame() {
     start.classList.add('hide');
+    for (let i = 0; i < 20; i++){
+        const line = document.createElement('div');
+        line.classList.add('line');
+        line.style.top = (i * 100) + 'px';
+        gameArea.appendChild(line);
+    };
     setting.start = true;
     gameArea.appendChild(car);
     setting.x = car.offsetLeft;
@@ -34,16 +40,16 @@ function playGame() {
     console.log('Play Game!');
     if (setting.start) {
         // console.log(keys);
-        if (keys.ArrowLeft){
+        if (keys.ArrowLeft && setting.x > 0){
             setting.x -= setting.speed;
         }
-        if (keys.ArrowRight){
+        if (keys.ArrowRight && setting.x < (gameArea.offsetWidth - car.offsetWidth)){
             setting.x += setting.speed;
         }
-        if (keys.ArrowUp){
+        if (keys.ArrowUp && setting.y > 0){
             setting.y -= setting.speed;
         }
-        if (keys.ArrowDown){
+        if (keys.ArrowDown && setting.y < (gameArea.offsetHeight - car.offsetHeight)){
             setting.y += setting.speed;
         }
         car.style.left = setting.x + 'px';

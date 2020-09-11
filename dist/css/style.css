@@ -23,4 +23,12 @@ body {
   background: #222;
 }
 
+.line {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: #fff;
+  left: 145px;
+}
+
 .webp .car { background: transparent url(../img/player.webp) center/cover no-repeat; }
